@@ -1,0 +1,22 @@
+{% if paginator.total_pages > 1 %}
+<div class="d-flex justify-content-center">
+  <div class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}"> Prev</a>
+    {% else %}
+    <span> Prev</span>
+    {% endif %} {% for page in (1..paginator.total_pages) %} {% if page ==
+    paginator.page %} {{ page }} {% elsif page == 1 %}
+    <a href="/">{{ page }}</a>
+    {% else %}
+    <a href="{{ site.paginate_path | relative_url | replace: ':num', page }}"
+      >{{ page }}</a
+    >
+    {% endif %} {% endfor %} {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">Next</a>
+    {% else %}
+    <span>Next</span>
+    {% endif %}
+  </div>
+</div>
+{% endif %}

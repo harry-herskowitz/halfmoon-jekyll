@@ -1,0 +1,18 @@
+<div id="post">
+  <div class="post-title text-center"><h1>{{page.title}}</h1></div>
+  <div class="d-flex justify-content-center mb-20">
+    {% for category in page.categories %}
+    <a
+      class="post-categories m-10"
+      href="{{ site.url }}/category/{{ category }}/index.html"
+      >{{ category }}</a
+    >
+    {% endfor %}
+    <div class="post-date m-10">{{ page.date | date: '%B %d, %Y' }}</div>
+  </div>
+  <img class="image w-full" src={{ base.url | prepend: site.url
+  }}/assets/images/posts/{{ page.image }}>
+  <div class="body m-auto">{{content}}</div>
+  {%include author.html%}
+  <p class="text-center mb-0">Recommended for you</p>
+</div>
