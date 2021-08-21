@@ -22,8 +22,8 @@ title: Halfmoon-Jekyll
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Jekyll Theme made with Halfmoon
-baseurl: '' # the subpath of your site, e.g. /blog
-url: '' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: '/halfmoon-jekyll' # the subpath of your site, e.g. /blog
+url: 'https://roldyclark.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username: roldyclark
 
