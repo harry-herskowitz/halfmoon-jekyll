@@ -1,10 +1,7 @@
 <hr />
 <div id="author" class="d-flex align-items-center justify-content-center">
-  <img
-    class="avatar h-100 w-100"
-    src="/assets/images/avatars/{{ page.avatar
-  }}"
-  />
+  <img class="avatar h-100 w-100" src={{ base.url | prepend: site.url
+  }}/assets/images/avatars/{{ page.avatar }}>
   <div class="m-20">
     <a href="{{page.author_link}}" target="_blank" rel="noopener noreferrer"
       ><p class="m-0">{{page.author}}</p></a
