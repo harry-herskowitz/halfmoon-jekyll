@@ -4,7 +4,7 @@
 >
   {% assign featured = site.posts | where_exp:"post","post.featured == true" %}
   {% for post in featured limit:1 %}
-  <a href="{{ post.url }}" class="postcard">
+  <a href="{{ post.url | prepend: site.url }}" class="postcard">
     <div class="card shadow-sm p-0 h-400">
       <div class="fill h-400">
         <img src={{ site.baseurl | prepend: site.url }}/assets/images/posts/{{
@@ -23,7 +23,7 @@
   </a>
   {% endfor %} {% assign nonfeatured = paginator.posts |
   where_exp:"post","post.featured != true" %} {% for post in nonfeatured%}
-  <a href="{{ post.url }}" class="postcard-sm">
+  <a href="{{ post.url | prepend: site.url}}" class="postcard-sm">
     <div class="card shadow-sm p-0 h-400">
       <div class="h-half overflow-hidden fill">
         <img src={{ site.baseurl | prepend: site.url }}/assets/images/posts/{{

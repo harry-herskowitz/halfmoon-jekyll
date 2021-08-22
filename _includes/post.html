@@ -4,7 +4,7 @@
     {% for category in page.categories %}
     <a
       class="post-categories m-10"
-      href="{{ site.url }}/category/{{ category }}/index.html"
+      href="{{ site.baseurl | prepend: site.url }}/category/{{ category }}/index.html"
       >{{ category }}</a
     >
     {% endfor %}

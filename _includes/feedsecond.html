@@ -4,7 +4,7 @@
 >
   {%if paginator.posts%} {%assign posts = paginator.posts%} {%else%} {%assign
   posts = page.paginator.posts %} {%endif%} {% for post in posts endif%}
-  <a href="{{ post.url }}" class="postcard-sm">
+  <a href="{{ post.url | prepend: site.url }}" class="postcard-sm">
     <div class="card shadow-sm p-0 h-400">
       <div class="h-half overflow-hidden d-flex align-items-center">
         <img class="image w-full" src={{ site.baseurl | prepend: site.url
