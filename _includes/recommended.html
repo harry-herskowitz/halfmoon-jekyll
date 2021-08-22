@@ -1,19 +1,19 @@
 <div id="recommended" class="d-flex flex-wrap justify-content-center m-auto">
   {% assign posts = site.posts | where_exp:"post","post.url != page.url" %} {%
   for post in posts limit:2%}
-  <a href="{{ post.url }}" class="postcard-sm">
+  <a href="{{ post.url | prepend: site.baseurl }}" class="postcard-sm">
     <div class="card shadow-sm w-md-350 p-0 h-400">
       <div class="h-half overflow-hidden fill">
         <img
           class="image w-full"
-          src="{{ site.url }}/assets/images/posts/{{
+          src="{{ site.baseurl }}/assets/images/posts/{{
         post.image }}"
           class="img-fluid rounded-top"
         />
       </div>
       <img
         class="avatar"
-        src="{{ site.url }}/assets/images/avatars/{{
+        src="{{ site.baseurl }}/assets/images/avatars/{{
       post.avatar }}"
       />
       <div class="h-half overflow-hidden">

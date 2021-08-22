@@ -10,7 +10,7 @@ author_link: 'https://github.com/roldyclark'
 avatar: 'roldy.png'
 ---
 
-![threadthreads screenshot](/assets/images/posts/threadthreads.jpg)
+![threadthreads screenshot]({{ site.url }}/assets/images/posts/threadthreads.jpg)
 
 Earlier this year I was approached by Abby Hollis, founder of the startup Threads Threads, to create a web application that archives the stories of secondhand clothing and textiles as they are passed on to new owners.
 

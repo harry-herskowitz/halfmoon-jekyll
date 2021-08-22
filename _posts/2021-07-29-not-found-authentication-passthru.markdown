@@ -10,7 +10,7 @@ author_link: 'https://github.com/roldyclark'
 avatar: 'roldy.png'
 ---
 
-![wordpress.com screenshot](/assets/images/posts/facebooklogin.jpg)
+![wordpress.com screenshot]({{ site.baseurl }}/assets/images/posts/facebooklogin.jpg)
 
 Last week, Facebook and Google logins stopped working in a Rails app I developed. Clicking the login links redirected to a blank page that read "Not found. Authentication passthru".
 

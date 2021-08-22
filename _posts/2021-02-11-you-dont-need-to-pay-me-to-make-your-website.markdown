@@ -14,7 +14,7 @@ Hi. I know this is weird. Why would I tell you to make your own website instead 
 
 First, I'll give you the easiest options. If you just want a blog with a custom domain, you can get a WordPress site on wordpress.com for as little as $4 a month. I'd suggest this to anyone who isn't technologically inclined. If you can afford $30 a month, there's also Squarespace, Wix, and my favorite: Ghost.
 
-![wordpress.com screenshot](/assets/images/posts/wordpressdotcom.jpg)
+![wordpress.com screenshot]({{ site.baseurl }}/assets/images/posts/wordpressdotcom.jpg)
 
 If you can't afford more than $4 a month, but need full WordPress features, then you'll have to host it yourself. It'll cost about $45 a year ($3.75 a month). Here's how to do that:
 
@@ -22,7 +22,7 @@ If you can't afford more than $4 a month, but need full WordPress features, then
 
 2. Install WordPress. This process will be different depending on what host you use. On Reclaim, you go to cPanel and look for the WordPress button under Applications. It'll ask you what domain format you want to use - choose https://yourdomain.com. Make sure you leave the directory section blank. Name your site, give it a tagline, and set your username and password (don't forget it!). You can keep all the default settings.
 
-   ![installatron screenshot](/assets/images/posts/installatron.jpg)
+   ![installatron screenshot]({{ site.baseurl }}/assets/images/posts/installatron.jpg)
 
 3. You now have a WordPress site. Sign into the admin panel by adding /wp-admin to the end of your domain (ex. yourdomain.com/wp-admin) and sign in.
 

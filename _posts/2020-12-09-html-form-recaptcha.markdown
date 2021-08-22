@@ -10,7 +10,7 @@ author_link: 'https://github.com/roldyclark'
 avatar: 'roldy.png'
 ---
 
-![recaptcha](/assets/images/posts/recaptcha.jpg)
+![recaptcha]({{ site.baseurl }}/assets/images/posts/recaptcha.jpg)
 
 Finding simple answers for submitting custom HTML forms are hard to find, especially when adding in Google reCAPTCHA and avoiding jQuery. The following code is a result of hours of hunting Stack Overflow for answers to two main problems: How to submit an HTML form without AJAX and how to prevent Google reCAPTCHA from overriding HTML5 form validation. The first required using a hidden iFrame as the form target, and the second involved placing the reCAPTCHA attributes in a hidden div rather than in the submit button.
 
