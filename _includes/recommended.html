@@ -4,10 +4,10 @@
   <a href="{{ post.url }}" class="postcard-sm">
     <div class="card shadow-sm w-md-350 p-0 h-400">
       <div class="h-half overflow-hidden fill">
-        <img class="image w-full" src={{ base.url | prepend: site.url
+        <img class="image w-full" src={{ site.baseurl | prepend: site.url
         }}/assets/images/posts/{{ post.image }} class="img-fluid rounded-top">
       </div>
-      <img class="avatar" src={{ base.url | prepend: site.url
+      <img class="avatar" src={{ site.baseurl | prepend: site.url
       }}/assets/images/avatars/{{ post.avatar }}>
       <div class="h-half overflow-hidden">
         <div class="post-categories">{{post.categories}}</div>

@@ -7,10 +7,10 @@
   <a href="{{ post.url }}" class="postcard">
     <div class="card shadow-sm p-0 h-400">
       <div class="fill h-400">
-        <img src={{ base.url | prepend: site.url }}/assets/images/posts/{{
+        <img src={{ site.baseurl | prepend: site.url }}/assets/images/posts/{{
         post.image }} class="img-fluid rounded-top">
       </div>
-      <img class="avatar" src={{ base.url | prepend: site.url
+      <img class="avatar" src={{ site.baseurl | prepend: site.url
       }}/assets/images/avatars/{{ post.avatar }}>
       <div class="post-categories d-flex justify-content-start m-10">
         {% for category in post.categories %}
@@ -26,10 +26,10 @@
   <a href="{{ post.url }}" class="postcard-sm">
     <div class="card shadow-sm p-0 h-400">
       <div class="h-half overflow-hidden fill">
-        <img src={{ base.url | prepend: site.url }}/assets/images/posts/{{
+        <img src={{ site.baseurl | prepend: site.url }}/assets/images/posts/{{
         post.image }} class="img-fluid rounded-top">
       </div>
-      <img class="avatar" src={{ base.url | prepend: site.url
+      <img class="avatar" src={{ site.baseurl | prepend: site.url
       }}/assets/images/avatars/{{ post.avatar }}>
       <div class="h-half overflow-hidden">
         <div class="post-categories d-flex justify-content-start m-10">
