@@ -142,17 +142,6 @@
   margin-top: 5rem;
 }
 
-/* variables */
-
-:root {
-  --navbar-height: 70px;
-  --dm-navbar-bg-color: black;
-  --dm-base-body-bg-color: #111;
-  --dm-card-bg-color: #111;
-  --primary-color: #777aff;
-  --primary-color-light: #a5a6fa;
-}
-
 /* typography */
 
 a:hover {
@@ -254,7 +243,11 @@ a:hover {
   height: 40px;
   border-radius: 50%;
   border-style: none;
-  background: linear-gradient(90deg, white 50%, black 50%);
+  background: linear-gradient(
+    90deg,
+    var(--lm-navbar-bg-color) 50%,
+    var(--dm-navbar-bg-color) 50%
+  );
   cursor: pointer;
 }
 
@@ -285,4 +278,15 @@ a:hover {
 pre {
   white-space: pre-wrap;
   tab-size: 2;
+}
+
+/* variables */
+
+:root {
+  --navbar-height: 70px;
+  --dm-navbar-bg-color: black;
+  --dm-base-body-bg-color: #111;
+  --dm-card-bg-color: #111;
+  --primary-color: #777aff;
+  --primary-color-light: #a5a6fa;
 }
