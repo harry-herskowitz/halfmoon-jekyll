@@ -23,7 +23,8 @@
   #frontpage .postcard-sm img:first-child,
   #secondpage .postcard-sm img:first-child {
     max-width: 200%;
-    height: 100%;
+    min-height: 100%;
+    max-height: 160%;
     width: auto;
   }
   #frontpage .postcard-sm:nth-child(n + 3):nth-child(-n + 4) img:first-child {
