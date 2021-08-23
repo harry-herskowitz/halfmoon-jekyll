@@ -14,15 +14,9 @@
   #frontpage .postcard-sm {
     width: calc(33.33333% - 70px);
   }
-  #frontpage .postcard-sm:nth-child(n + 3):nth-child(-n + 4) {
-    width: calc(50% - 100px);
-  }
+  #frontpage .postcard-sm:nth-child(n + 3):nth-child(-n + 4),
   #secondpage .postcard-sm {
     width: calc(50% - 100px);
-  }
-  #frontpage .postcard-sm:nth-child(n + 3):nth-child(-n + 4) img:first-child {
-    max-width: 100%;
-    height: auto;
   }
 }
 
@@ -35,11 +29,6 @@
     width: 100%;
     min-width: 350px;
     max-width: 400px;
-  }
-  .postcard img:first-child {
-    max-width: 200%;
-    height: 100%;
-    width: auto;
   }
 }
 
