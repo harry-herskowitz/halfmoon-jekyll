@@ -20,13 +20,6 @@
   #secondpage .postcard-sm {
     width: calc(50% - 100px);
   }
-  #frontpage .postcard-sm img:first-child,
-  #secondpage .postcard-sm img:first-child {
-    max-width: 200%;
-    min-height: 100%;
-    max-height: 160%;
-    width: auto;
-  }
   #frontpage .postcard-sm:nth-child(n + 3):nth-child(-n + 4) img:first-child {
     max-width: 100%;
     height: auto;
@@ -260,7 +253,7 @@ a:hover {
 
 .fill img {
   flex-shrink: 0;
-  min-width: 100%;
+  max-width: 130%;
   min-height: 100%;
 }
 
