@@ -7,7 +7,7 @@
     >Halfmoon</a
   >
   <button id="moon" onclick="halfmoon.toggleDarkMode()"></button>
-  <div class="nav-links right">
+  <div class="nav-links right hidden-sm-and-down">
     <a
       class="float-right mx-10"
       href="https://github.com/roldyclark/halfmoon-jekyll"
@@ -22,6 +22,33 @@
       rel="noopener noreferrer"
       >Halfmoon</a
     >
+  </div>
+  <div class="dropdown hidden-md-and-up">
+    <button class="btn" data-toggle="dropdown" type="button">
+      <svg viewBox="0 0 80 75" width="20" height="30">
+        <rect width="80" height="15"></rect>
+        <rect y="30" width="80" height="15"></rect>
+        <rect y="60" width="80" height="15"></rect>
+      </svg>
+    </button>
+    <div
+      class="dropdown-menu dropdown-menu-right d-flex flex-column text-center"
+    >
+      <a
+        class="m-5"
+        href="https://github.com/roldyclark/halfmoon-jekyll"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Github</a
+      >
+      <a
+        class="m-5"
+        href="https://www.gethalfmoon.com/docs/introduction/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Halfmoon</a
+      >
+    </div>
   </div>
 </nav>
 <!-- Navbar end -->

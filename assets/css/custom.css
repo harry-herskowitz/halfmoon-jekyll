@@ -7,6 +7,10 @@
   top: 125px;
 }
 
+.dropdown svg {
+  fill: var(--primary-color);
+}
+
 @media screen and (min-width: 1100px) {
   #frontpage .postcard {
     width: calc(66.66667% - 100px);
@@ -137,6 +141,10 @@ a:hover {
 
 .nav-links a {
   font-size: 2rem;
+}
+
+.dropdown {
+  font-size: 2.5rem;
 }
 
 .hero {
