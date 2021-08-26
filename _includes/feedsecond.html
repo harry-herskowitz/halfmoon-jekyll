@@ -20,7 +20,11 @@
       }}/assets/images/avatars/{{ post.avatar }}"
       />
       <div class="h-half overflow-hidden">
-        <div class="post-categories">{{post.categories}}</div>
+        <div class="post-categories d-flex justify-content-start m-10">
+          {% for category in post.categories %}
+          <div class="m-10">{{category}}</div>
+          {% endfor %}
+        </div>
         <div class="post-title">{{post.title}}</div>
         <div class="post-date">{{ post.date | date: '%B %d, %Y' }}</div>
       </div>
