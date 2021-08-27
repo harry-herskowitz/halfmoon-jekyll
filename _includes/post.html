@@ -4,7 +4,7 @@
     {% for category in page.categories %}
     <a
       class="post-categories m-10"
-      href="{{ site.baseurl }}/category/{{ category }}/index.html"
+      href="{{ site.baseurl }}/category/{{ category | slugify }}/index.html"
       >{{ category }}</a
     >
     {% endfor %}
