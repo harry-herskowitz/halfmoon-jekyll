@@ -12,7 +12,20 @@
       <!-- Content wrapper start -->
       <div class="content-wrapper">
         <h1 class="text-center mt-20"><b>{{page.category}}</b></h1>
-        {%include feedsecond.html%} {%include footer.html%}
+        {%include feedsecond.html%}
+        <div class="d-flex justify-content-center">
+          <div class="pagination">
+            {% if page.paginator.previous_page %}
+            <a href="{{ page.paginator.previous_page_path }}"
+              ><span aria-hidden="true">&larr;</span> Newer</a
+            >{% endif %} {% if page.paginator.next_page %}<a
+              href="{{ page.paginator.next_page_path }}"
+              >Older <span aria-hidden="true">&rarr;</span></a
+            >
+            {% endif %}
+          </div>
+        </div>
+        {%include footer.html%}
       </div>
       <!-- Content wrapper end -->
     </div>
