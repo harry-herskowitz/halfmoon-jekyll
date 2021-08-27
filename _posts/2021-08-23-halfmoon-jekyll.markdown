@@ -8,6 +8,8 @@ author: 'Harry Herskowitz'
 author_blurb: 'Harry is a web developer and videographer with a focus on using technology to empower local artists and communities'
 author_link: 'https://github.com/roldyclark'
 avatar: 'roldy.png'
+featured: true
+hidden: true
 ---
 
 Welcome to Halfmoon-Jekyll! I made this [Jekyll](https://jekyllrb.com/) theme using the [Halfmoon](https://www.gethalfmoon.com/docs/introduction/) front-end framework. It supports categories, pagination, multiple authors, and dark mode.
