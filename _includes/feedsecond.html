@@ -2,8 +2,8 @@
   id="secondpage"
   class="post-container d-flex flex-wrap justify-content-center m-auto"
 >
-  {%if paginator.posts%} {%assign posts = paginator.posts%} {%else%} {%assign
-  posts = page.paginator.posts %} {%endif%} {% for post in posts endif%}
+  {% if page.paginator %} {% assign paginator = page.paginator %} {% endif %} {%
+  for post in paginator.posts %}
   <a href="{{ post.url | prepend: site.baseurl }}" class="postcard-sm">
     <div class="card shadow-sm p-0 h-400">
       <div class="h-half overflow-hidden d-flex align-items-center">
