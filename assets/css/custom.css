@@ -164,19 +164,12 @@ a:hover {
   font-weight: bold;
 }
 
-@media screen and (min-width: 1100px) {
-  #frontpage .postcard-sm:nth-child(2) .post-title,
-  #frontpage .postcard-sm:nth-child(n + 5):nth-child(-n + 7) .post-title {
-    font-size: 1.5rem;
-  }
-}
-
 .postcard .card {
   color: white;
 }
 
 .postcard .post-title {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
 }
 
@@ -188,6 +181,17 @@ a:hover {
 .postcard-sm .post-title {
   font-size: 2rem;
   font-weight: bold;
+}
+
+@media screen and (min-width: 1100px) {
+  #frontpage .postcard-sm:nth-child(2) .post-title,
+  #frontpage .postcard-sm:nth-child(n + 5):nth-child(-n + 7) .post-title {
+    font-size: 1.5rem;
+  }
+  .postcard .post-title {
+    font-size: 4rem;
+    font-weight: bold;
+  }
 }
 
 .postcard .post-categories {
