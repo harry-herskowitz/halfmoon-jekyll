@@ -23,8 +23,8 @@ email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   Jekyll Theme made with Halfmoon
 baseurl: '/halfmoon-jekyll' # the subpath of your site, e.g. /blog
-url: 'https://roldyclark.github.io' # the base hostname & protocol for your site, e.g. http://example.com
-github_username: roldyclark
+url: 'https://harry-herskowitz.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+github_username: harry-herskowitz
 
 # Build settings
 theme: minima
