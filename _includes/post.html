@@ -2,11 +2,7 @@
   <div class="post-title text-center"><h1>{{page.title}}</h1></div>
   <div class="d-flex justify-content-center mb-20">
     {% for category in page.categories %}
-    <a
-      class="post-categories m-10"
-      href="{{ site.baseurl }}/category/{{ category | slugify }}/index.html"
-      >{{ category }}</a
-    >
+      <div class="post-categories m-10">{{ category }}</div>
     {% endfor %}
     <div class="post-date m-10">{{ page.date | date: '%B %d, %Y' }}</div>
   </div>
